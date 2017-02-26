@@ -3,9 +3,6 @@
     <h1 class="title">
       Rasheed Bustamam
     </h1>
-    <nuxt-link class="button" to="/about">
-      About page
-    </nuxt-link>
   </section>
 </template>
 
