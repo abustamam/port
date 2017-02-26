@@ -1,0 +1,36 @@
+@import 'colors'
+
+html,
+body
+  background-color: $background-color
+  color: $text-color
+  font-family: 'Source Sans Pro', Arial, sans-serif
+  height: 100vh
+  letter-spacing: .5px
+  margin: 0
+
+a
+  &:hover,
+  &:focus,
+  &:visited
+    color: $link-color
+
+.nuxt-link-active
+  a
+    &:hover,
+    &:focus,
+    &:visited
+      color: $active-link-color
+
+.logo
+  height: 218px
+  width: 243px
+
+.page-enter-active,
+.page-leave-active
+  transition: opacity .5s
+
+.page-enter,
+.page-leave-active
+  opacity: 0
+
