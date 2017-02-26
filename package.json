@@ -13,6 +13,7 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "marked": "^0.3.6",
     "node-sass": "^4.5.0",
     "nuxt": "^0.9.9",
     "sass-loader": "^6.0.2"

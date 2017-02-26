@@ -4,6 +4,7 @@ node_modules
 # intelliJ
 .idea
 *.iml
+.DS_Store
 
 # logs
 npm-debug.log

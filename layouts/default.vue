@@ -21,18 +21,22 @@ export default {
 </script>
 
 <style lang="sass">
-.container
-  margin: 0
-  width: 100%
-  padding: 100px 0
-  text-align: center
-
 .app-content
   display: flex
   flex-direction: column
   min-height: 100vh
 
+.container
+  margin: 0
+  width: 100%
+  padding: 0 50px 50px 50px
+  display: flex
+  flex: 1
+  flex-direction: column
+
 .content
+  display: flex
+  flex-direction: column
   flex: 1
 
 .button,

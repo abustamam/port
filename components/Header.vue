@@ -18,7 +18,7 @@
 
 header
   border-bottom: 1px solid $border-color
-  padding: 20px
+  padding: 0 20px
 
 nav
  // background-color: #333
