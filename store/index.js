@@ -1,5 +1,3 @@
 export const actions = {
-  nuxtServerInit ({commit, dispatch}) {
-    dispatch('camper/fetchUsers')
-  }
+  nuxtServerInit ({dispatch}) {return dispatch('camper/fetchUsers')}
 }
