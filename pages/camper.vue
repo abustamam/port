@@ -20,9 +20,16 @@ import axios from 'axios'
 
 export default {
   computed: {
-    loading() { return this.$store.state.camper.loading}
+    loading() { 
+      console.log('LOADED')
+      return this.$store.state.camper.loading
+    },
+    users() {
+      return this.$store.state.camper.users
+    }
   },
   fetch({store}) {
+    console.log('FETCHING')
     store.dispatch('camper/fetchUsers')
   }
 }

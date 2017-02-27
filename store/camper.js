@@ -11,13 +11,16 @@ export const state = {
 
 export const mutations = {
   updateUsers(state, data) {
+    console.log('UPDATING')
     state.users = data
     state.loading = false
+    console.log('UPDATED')
   }
 }
 
 export const actions = {
   fetchUsers(context) {
+    console.log('FETCHING')
     const {state: {sortBy}, commit} = context
     const url = sortBy === 'all' ? allUrl : recentUrl
     return axios
