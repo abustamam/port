@@ -5,7 +5,8 @@ const allUrl = 'https://fcctop100.herokuapp.com/api/fccusers/top/alltime'
 
 export const state = {
   loading: true,
-  sortBy: 'all',
+  display: 'all',
+  sortBy: 'name/asc',
   users: null
 }
 
@@ -18,8 +19,8 @@ export const mutations = {
 
 export const actions = {
   async fetchUsers(context) {
-    const {state: {sortBy}, commit} = context
-    const url = sortBy === 'all' ? allUrl : recentUrl
+    const {state: {display}, commit} = context
+    const url = display === 'all' ? allUrl : recentUrl
     const res = await axios.get(url)
     commit('updateUsers', res.data)
   }
