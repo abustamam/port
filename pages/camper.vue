@@ -4,7 +4,7 @@
       Camper
     </h1>
     <div class="app">
-      <!-- <div class="loading" v-if="loading">Loading...</div> -->
+      <div class="loading" v-if="loading">Loading...</div>
       <div class="col">
 
       </div>
@@ -19,6 +19,9 @@
 import axios from 'axios'
 
 export default {
+  computed: {
+    loading() { return this.$store.state.camper.loading}
+  },
   fetch({store}) {
     store.dispatch('camper/fetchUsers')
   }

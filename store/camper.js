@@ -2,8 +2,6 @@ import axios from 'axios'
 
 const recentUrl = 'https://fcctop100.herokuapp.com/api/fccusers/top/recent'
 const allUrl = 'https://fcctop100.herokuapp.com/api/fccusers/top/alltime'
-const getTopRecent = () => axios.get(recentUrl)
-const getTopAll = () => axios.get(allUrl)
 
 export const state = {
   loading: true,
