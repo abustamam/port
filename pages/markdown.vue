@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import {mapMutations} from 'vuex'
 import marked from 'marked'
 
 export default {

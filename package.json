@@ -13,6 +13,7 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "axios": "^0.15.3",
     "marked": "^0.3.6",
     "node-sass": "^4.5.0",
     "nuxt": "^0.9.9",

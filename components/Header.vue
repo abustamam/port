@@ -8,6 +8,9 @@
         <nuxt-link tag="li" to="/markdown">
           <a>Markdown</a>
         </nuxt-link>
+        <nuxt-link tag="li" to="/camper">
+          <a>Camper</a>
+        </nuxt-link>
       </ul>
     </nav>
   </header>
